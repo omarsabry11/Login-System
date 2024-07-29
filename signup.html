@@ -30,10 +30,13 @@
 
                 <h1 class="mb-4">Smart Login System</h1>
                 <div class="form d-flex flex-wrap justify-content-center">
-                    <input type="text" class="w-100 rounded mb-3 py-2 ps-2 bg-transparent" placeholder="Enter Your Name" name="" id="">
-                    <input class="w-100 rounded mb-3 py-2 ps-2 bg-transparent" type="email" placeholder="Enter Your email" name="" id="">
-                    <input class="w-100 rounded mb-4 py-2 ps-2 bg-transparent" type="password" placeholder="Enter Your password" name="" id="">
-                    <button class="w-100 rounded py-2 bg-transparent mb-3">Login</button>
+                    <input id="name" type="text" class="w-100 rounded mb-3 py-2 ps-2 bg-transparent" placeholder="Enter Your Name" name="" id="">
+                    <input id="email" class="w-100 rounded mb-3 py-2 ps-2 bg-transparent" type="email" placeholder="Enter Your email" name="" id="">
+                    <input id="pass" class="w-100 rounded mb-4 py-2 ps-2 bg-transparent" type="password" placeholder="Enter Your password" name="" id="">
+                    <div id="success" class="success-message border-0 mb-4 text-success d-none">Success</div>
+                    <div id="exist" class="exist-message border-0 mb-4 text-danger d-none">email already exists</div>
+                    <div id="all-inputs" class="all-inputs border-0 mb-4 text-danger d-none">All inputs is required</div>
+                    <button id="btn" class="w-100 rounded py-2 bg-transparent mb-3">Register</button>
                 </div>
                 <p class="text-white">Don’t have an account?<a href="index.html" class="text-decoration-none text-white"> Sign in</a></p>
 
@@ -42,8 +45,8 @@
 
     </div>
 
-    <script src="js/index.js"></script>
+    <script src="js/signup.js"></script>
 
-</body>
+</body>  
 
 </html>

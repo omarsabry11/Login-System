@@ -30,9 +30,11 @@
 
                 <h1 class="mb-4">Smart Login System</h1>
                 <div class="form d-flex flex-wrap justify-content-center">
-                    <input class="w-100 rounded mb-3 py-2 ps-2 bg-transparent" type="email" placeholder="Enter Your email" name="" id="">
-                    <input class="w-100 rounded mb-4 py-2 ps-2 bg-transparent" type="password" placeholder="Enter Your password" name="" id="">
-                    <button class="w-100 rounded py-2 bg-transparent mb-3">Login</button>
+                    <input id="email" class="w-100 rounded mb-3 py-2 ps-2 bg-transparent" type="email" placeholder="Enter Your email" name="" id="">
+                    <input id="pass" class="w-100 rounded mb-4 py-2 ps-2 bg-transparent" type="password" placeholder="Enter Your password" name="" id="">
+                    <div id="invalid"  class="invalid border-0 mb-4 text-danger d-none">incorrect email or password</div>
+                    <div id="all-inputs"  class=" border-0 mb-4 text-danger d-none">All inputs is required</div>
+                    <button id="login" class="w-100 rounded py-2 bg-transparent mb-3">Login</button>
                 </div>
                 <p class="text-white">Don’t have an account? <a href="signup.html" class="text-decoration-none text-white"> Sign Up</a></p>
 
