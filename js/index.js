@@ -1,6 +1,11 @@
+"use strict"
+
 let emailInput = document.getElementById('email');
 let passInput = document.getElementById('pass');
-let btnLogin = document.getElementById('login');
+let loginAncor = document.querySelector('.form #test');
+
+
+console.log(loginAncor);
 
 
 let usersContainer = []; 
@@ -39,7 +44,8 @@ function clearForm()
     passInput.value = null;
 }
 
-btnLogin.addEventListener('click',login);
+
+loginAncor.addEventListener('click',login);
 
 function login()
 {
@@ -61,6 +67,10 @@ function login()
         document.querySelector('.form .invalid').classList.replace('d-block','d-none');
         document.getElementById('all-inputs').classList.replace('d-block','d-none');
         clearForm();
+        loginAncor.setAttribute('href','home.html');
+       
+        
+   
     }
         
 }

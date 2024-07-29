@@ -62,6 +62,20 @@ body
     background-color: var(--main-color) !important;
     color: white;
 }
+.box .form > a
+{
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.box .form > a:hover
+{
+    background-color: var(--main-color) !important;
+    color: white;
+}
 
 .box .content > p a:hover
 {

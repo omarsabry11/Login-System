@@ -1,7 +1,5 @@
 "use strict"
 
-
-
 let nameInput = document.getElementById('name')
 let emailInput = document.getElementById('email');
 let passInput = document.getElementById('pass');
@@ -13,11 +11,12 @@ let usersContainer = [];
 
 if (localStorage.getItem('users')) {
     usersContainer = JSON.parse(localStorage.getItem('users'));
-    console.log(usersContainer);
+    
 
 }
 
-function isExist() {
+function isExist() 
+{
     for (let i = 0; i < usersContainer.length; i++) {
         if (emailInput.value == usersContainer[i].email) {
             return true;
@@ -61,6 +60,9 @@ function addUser() {
             email: emailInput.value,
             password: passInput.value
         }
+     
+  
+        localStorage.setItem('boxName',nameInput.value);
         document.getElementById('success').classList.replace('d-none', 'd-block');
         document.getElementById('exist').classList.replace('d-block', 'd-none');
         document.getElementById('all-inputs').classList.replace('d-block', 'd-none');
